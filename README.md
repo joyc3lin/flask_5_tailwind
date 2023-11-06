@@ -114,10 +114,13 @@ My web application: https://koikoi.azurewebsites.net/
 
 + To validate that the flask app is being served from the CDN, go to [GTmetrix](https://gtmetrix.com/)
 + Input the web application URL for testing
-+ 
++ Results should look like this:
+
+![GTmetrix](https://github.com/joyc3lin/flask_5_tailwind/blob/main/screenshots/GTmetrix.png)
 
 # Errors
 
-could not uolad .MOV file
++ _Uploading Video File_: Initially, the video was uploaded as a .MOV file to containers. However, the edited "Endpoint hostname" URL would lead to a download option for the video file instead of loading the file into the web browser. This issues was fixed when the .MOV file was converted to .mp4. 
 
-quotation font error in index.html
++ _Index.html run error_: The <code>index.html</code> file kept returning an error even though the code matched what was provided. Further search showed that the end quotation in <code><script src="https://cdn.tailwindcss.com"></script> </code> was in a different font than the rest. Once it was replaced, the file ran normally. 
+
