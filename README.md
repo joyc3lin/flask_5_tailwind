@@ -107,6 +107,8 @@ if __name__ == '__main__':
 
 My web application: https://koikoi.azurewebsites.net/
 
+![koiapp](https://github.com/joyc3lin/flask_5_tailwind/blob/main/screenshots/flaskapp.png)
+
 
 # Validate Asset Delivery 
 
