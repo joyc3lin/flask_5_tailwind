@@ -22,14 +22,14 @@ I chose to use a 12-second video I took in Japan of Koi fish swimming in a river
 
 + In created storage account, scroll down and go to "Security" 
 + In "Security", enable "Allow Blob anonymous access"
-+ Save 
-
++ Save
+  
 + In the left menu bar of the storage account, go to "Data storage" and select "Containers"
 + Create a new container 
 + Name the container 
 + Anonymous access level: Container
 + Create
-
+  
 + In newly created container, select upload
 + Drop or browse for the desired file 
 + Upload file 
