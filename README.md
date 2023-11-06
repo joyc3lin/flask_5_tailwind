@@ -95,7 +95,7 @@ if __name__ == '__main__':
 + In the terminal, enter <code>az account list --output table</code>
 + Find the subscription that will be used and copy its "subscriptionID"
 + In terminal, enter <code>az account set --subscription [paste-subscriptionID]</code>
-+ To create a new webapp, enter <code>az webapp up --name [name-of-webapp] --runtime PYTHON:3.9 --sku B1<code>
++ To create a new webapp, enter <code>az webapp up --name [name-of-webapp] --runtime PYTHON:3.9 --sku B1</code>
     + The name of the app can be anything
     + Creating the web app may take a while 
 
