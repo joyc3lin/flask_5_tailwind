@@ -112,6 +112,10 @@ My web application: https://koikoi.azurewebsites.net/
 
 # Validate Asset Delivery 
 
++ To validate that the flask app is being served from the CDN, go to [GTmetrix](https://gtmetrix.com/)
++ Input the web application URL for testing
++ 
+
 # Errors
 
 could not uolad .MOV file
