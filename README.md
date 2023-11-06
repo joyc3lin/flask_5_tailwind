@@ -23,17 +23,23 @@ I chose to use a 12-second video I took in Japan of Koi fish swimming in a river
 + In created storage account, scroll down and go to "Security" 
 + In "Security", enable "Allow Blob anonymous access"
 + Save
+  
 </br>
+
 + In the left menu bar of the storage account, go to "Data storage" and select "Containers"
 + Create a new container 
 + Name the container 
 + Anonymous access level: Container
 + Create
-  
+
+</br>
+
 + In newly created container, select upload
 + Drop or browse for the desired file 
 + Upload file 
 + Go into the newly uploaded file and copy the URL provided into a new tab
+
+</br>
 
 + Go back to the storage account, under "Security + networking", go to "Front Door and CDN"
 + Create a new endpoint 
@@ -42,9 +48,13 @@ I chose to use a 12-second video I took in Japan of Koi fish swimming in a river
 + Query string caching behavior: Ignore Query String 
 + Create 
 
+</br>
+
 + In endpoints, click on the newly created host name and click on it again in the next page that loads 
 + It will then show a page with "Endpoint hostname" and "Origin hostname" 
 + Open the URL under "Endpoint hostname" 
+
+</br>
 
 + From the URL pasted into the new tab from before, copy the part that comes after "-windows.net"
 + Paste it into the tab created after opening the "Endpoint hostname" URL
