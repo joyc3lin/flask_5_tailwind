@@ -55,9 +55,48 @@ I chose to use a 12-second video I took in Japan of Koi fish swimming in a river
 
 + In Google shell, create a new <code>app.py</code> file and a templates folder with an <code>index.html</code> file 
 + In the <code>index.html</code> file, the code from the Professor's [example](https://github.com/hantswilliams/HHA_504_2023/blob/main/WK5/example_app/templates/index_tailwind.html) was pasted in and [edited](https://github.com/joyc3lin/flask_5_tailwind/blob/main/templates/index.html)
-+ In the <code>app.py</code> file, 
++ In the <code>app.py</code> file, code from a previous Flask app was used and edited to: 
+
+```python
+
+from flask import Flask, render_template
+
+app = Flask(__name__)
+
+@app.route('/')
+def indexpage():
+    return render_template('index.html')
+
+if __name__ == '__main__':
+    app.run(debug=True)
+
+```
 
 # Cloud Deployment 
+
++ The Flask app was deployed on Azure App Service 
++ In the terminal, install AZURE CLI with <code>curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash</code>
++ Enter <code>az</code>
++ Enter <code>az login --use-device-code</code>
++ Select URL provided
++ Cpoy paste copde provided in the same line as URL 
++ Pick an account 
++ Select "Yes" to the prompt "Are you trying to sign in to Microsoft Azure CLI?"
++ In the terminal, enter <code>az account list --output table</code>
++ Find the subscription that will be used and copy its "subscriptionID"
++ In terminal, enter <code>az account set --subscription [paste-subscriptionID]</code>
++ To create a new webapp, enter <code>az webapp up --name [name-of-webapp] --runtime PYTHON:3.9 --sku B1<code>
+    + The name of the app can be anything
+    + Creating the web app may take a while 
+
+**To Check App on Azure**
+
++ On Azure, go to "App Services" 
++ Select the newly created Wep app, the name should be the name created in the ternimal 
++ The URL provided with "Default Domain" is the linke for the application 
+
+My web application: https://koikoi.azurewebsites.net/
+
 
 # Validate Asset Delivery 
 
