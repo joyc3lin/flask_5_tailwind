@@ -23,7 +23,7 @@ I chose to use a 12-second video I took in Japan of Koi fish swimming in a river
 + In created storage account, scroll down and go to "Security" 
 + In "Security", enable "Allow Blob anonymous access"
 + Save
-  
+</br>
 + In the left menu bar of the storage account, go to "Data storage" and select "Containers"
 + Create a new container 
 + Name the container 
